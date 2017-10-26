@@ -1,0 +1,92 @@
+
+<div class="registrationcontainer">
+<h1 align="center">
+<b>
+  Create an account
+  </b>
+  </h1>
+  <div class="alignformclass">
+  <form (ngSubmit)="onSubmit()" novalidate
+      [formGroup]="myform">
+
+  <fieldset formGroupName="name">
+    <div class="form-group"
+         [ngClass]="{
+        'has-warning': firstName.invalid && (firstName.dirty || firstName.touched),
+        'has-success': firstName.valid && (firstName.dirty || firstName.touched)
+      }">
+      <label>First Name</label>
+      <input type="text"
+             class="form-control"
+             formControlName="firstName"
+             required>
+      <div class="errormsg">
+          
+        <p *ngIf="firstName.errors && (firstName.dirty || firstName.touched)">First Name is required</p>
+      </div>
+
+    
+    </div>
+
+    <div class="form-group"
+         [ngClass]="{
+        'has-warning': lastName.invalid && (lastName.dirty || lastName.touched),
+        'has-success': lastName.valid && (lastName.dirty || lastName.touched)
+      }">
+      <label>Last Name</label>
+      <input type="text"
+             class="form-control"
+             formControlName="lastName"
+             required>
+      <div class="errormsg">
+        
+        <p *ngIf="lastName.errors  && (lastName.dirty || lastName.touched)">Last Name is required</p>
+      </div>
+    </div>
+  </fieldset>
+
+
+  <div class="form-group"
+       [ngClass]="{
+        'has-warning': email.invalid && (email.dirty || email.touched),
+        'has-success': email.valid && (email.dirty || email.touched)
+   }">
+    <label>Email</label>
+    <input type="email"
+           class="form-control"
+           formControlName="email"
+           required>
+    <div class="errormsg">
+      <p *ngIf="email.errors && (email.dirty || email.touched)">Email is required</p>
+     
+    </div>
+
+   
+
+  </div>
+
+  <div class="form-group"
+       [ngClass]="{
+        'has-warning': password.invalid && (password.dirty || password.touched),
+        'has-success': password.valid && (password.dirty || password.touched)
+   }">
+    <label>Password</label>
+    <input type="password"
+           class="form-control"
+           formControlName="password"
+           required>
+    <div class="errormsg">
+      <p *ngIf="password.errors && (password.dirty || password.touched)">Password is required</p>
+     
+    </div>
+  </div>
+
+ 
+
+ <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+  </div>
+
+
+

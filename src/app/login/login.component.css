@@ -1,0 +1,74 @@
+.loggedout_menubar_container {
+    height: 82px;
+    min-width: 980px;
+}
+
+._53jh {
+    background-color: #3b5998;  
+    
+    min-height: 82px;
+}
+
+.loggedout_menubar {
+    
+    padding-left: 70px;
+    width: 1100px;
+}
+
+.logincontainer_menubar {
+
+	margin: 0 100px;
+    padding-top: 13px;
+    width: 980px;
+}
+.inputtext {
+    border-color: #1d2a5b;
+    margin: 0;
+    width: 142px;
+    padding-right: 20px;
+}
+
+.pad {
+	padding-right:10px;
+}
+
+.padtop {
+	padding-top:8.75px;
+}
+
+
+
+
+.lfloat {
+    float: left;
+}
+
+
+.rfloat {
+    float: right;
+     padding-top:10px;
+}
+
+
+
+.uiButtonConfirm {
+    background-color: #4267b2;
+    border-color: #29487d;
+    color:white;
+}
+
+.menu_title {
+    color:white;
+    font-style: italic;
+}
+.errormsg {
+    color:#d35f47;
+    font-style: italic;
+}
+
+
+
+
+div {
+    display: block;
+}

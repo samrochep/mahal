@@ -1,0 +1,21 @@
+
+.registrationcontainer {
+    
+      height:700px;
+      width:500px;
+      margin-left:500px;
+       font-style: italic;
+	
+}
+
+.alignformclass {
+	padding-top:10px;
+margin-left:100px;
+
+}
+
+.errormsg {
+	padding-top:4px;
+    color:#d35f47;
+    font-style: italic;
+}
